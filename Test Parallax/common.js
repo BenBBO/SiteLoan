@@ -16,3 +16,11 @@ $(document).scroll(function () {
       }
     
   });
+
+  /**
+   * Méthode de sleep
+   * @param {*} ms temps d'attente en ms
+   */
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }

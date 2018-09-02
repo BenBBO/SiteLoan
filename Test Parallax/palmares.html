@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="palmares.css">
     <script src="common.js"></script>
+    <script src="palmares.js"></script>
 </head>
 
 <body>
@@ -21,27 +22,35 @@
 
     <div class="switchContainer">
         <div class="switch">
-            <input name="switch" id="one" type="radio" checked/>
+            <input name="switchPalmares" data-target="#palmares2018" id="one" type="radio" checked/>
             <label for="one" class="switch__label">2018</label>
-            <input name="switch" id="two" type="radio" />
+            <input name="switchPalmares" data-target="#palmares2017" id="two" type="radio" />
             <label for="two" class="switch__label">2017</label>
-            <input name="switch" id="three" type="radio" />
+            <input name="switchPalmares" data-target="#palmares2016" id="three" type="radio" />
             <label for="three" class="switch__label">2016</label>
             <div class="switch__indicator"></div>
         </div>
     </div>
-    <div class="palmares2018">
+    <div id="palmares2018" class="palmaresContainer">
         <h1>Année 2018</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tournoi</th>
+                    <th>Résultat</th>
+                    <th>Détail</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
     </div>
-    <div class="palmares2017">
+    <div id="palmares2017" class="hidden palmaresContainer">
         <h1>Année 2017</h1>
     </div>
-    <div class="palmares2016">
+    <div id="palmares2016" class="hidden palmaresContainer">
         <h1>Année 2016</h1>
     </div>
-
-
-
 </body>
 
 </html>

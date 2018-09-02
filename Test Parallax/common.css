@@ -65,6 +65,10 @@ body, html {
     top: -30px;
   }
 
+  .hidden{
+    display: none;
+  }
+
   
 /* Turn off parallax scrolling for tablets and phones */
 
