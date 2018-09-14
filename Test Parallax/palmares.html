@@ -5,6 +5,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="palmares.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <script src="common.js"></script>
     <script src="palmares.js"></script>
 </head>
@@ -22,7 +24,7 @@
 
     <div class="switchContainer">
         <div class="switch">
-            <input name="switchPalmares" data-target="#palmares2018" id="one" type="radio" checked/>
+            <input name="switchPalmares" data-target="#palmares2018" id="one" type="radio" checked />
             <label for="one" class="switch__label">2018</label>
             <input name="switchPalmares" data-target="#palmares2017" id="two" type="radio" />
             <label for="two" class="switch__label">2017</label>
@@ -34,15 +36,97 @@
     <div id="palmares2018" class="palmaresContainer">
         <h1>Année 2018</h1>
 
-        <table>
-            <thead>
+        <table class="table">
+            <thead class="thead-light">
                 <tr>
-                    <th>Tournoi</th>
-                    <th>Résultat</th>
-                    <th>Détail</th>
+                    <th scope="col">Tournoi</th>
+                    <th scope="col">Tableau</th>
+                    <th scope="col">Adversaire</th>
+                    <th scope="col">Résultat</th>
+                    <th scope="col">Date</th>
+
                 </tr>
             </thead>
-            <tbody></tbody>
+            <tbody>
+                <tr class="table-success">
+                    <td>Mouratoglou ITF Juniors (Biot, France)
+                    </td>
+                    <td>Principal</td>
+                    <td>
+                        GRECO Kayla (AUS)
+                    </td>
+                    <td> Victoire
+                        6/2 6/3
+                    </td>
+                    <td>Septembre 2018</td>
+                </tr>
+                <tr class="table-warning">
+                    <td>Mouratoglou ITF Juniors (Biot, France)
+
+                    </td>
+                    <td>Principal</td>
+                    <td>
+                        GELLER Nicole (LAT)
+                    </td>
+                    <td> Défaite
+                        4/6 0/6
+                    </td>
+                    <td>Septembre 2018</td>
+
+                </tr>
+                <tr class="table-warning">
+                        <td>Dijon Lac Kir ITF Juniors (Dijon, France)   
+                        </td>
+                        <td>Principal</td>
+                        <td>
+                            ATA SARRA(TUN)
+                        </td>
+                        <td> Défaite
+                            6/2 4/6 6/7
+                        </td>
+                        <td>Aout 2018</td>
+    
+                    </tr>
+                    <tr class="table-warning">
+                            <td>Tournoi International de Clermont-Ferrand (Clermond-Ferrand, France)   
+                            </td>
+                            <td>Qualificatif</td>
+                            <td>
+                                FALENTIN LEA (FRA)
+                            </td>
+                            <td> Défaite
+                                3/6 5/7
+                            </td>
+                            <td>Aout 2018</td>
+        
+                        </tr>
+                        <tr class="table-warning">
+                                <td>Malahide ITF Under 18 (Dublin, Irlande)
+                                </td>
+                                <td>Principal</td>
+                                <td>
+                                    MURPHY ELLIE (IRL)
+                                </td>
+                                <td> Défaite
+                                    3/6 1/6
+                                </td>
+                                <td>Juillet 2018</td>
+            
+                            </tr>
+                            <tr class="table-success">
+                                    <td>Malahide ITF Under 18 (Dublin, Irlande)
+                                    </td>
+                                    <td>Qualificatif</td>
+                                    <td>
+                                        MOLONEY GRACE (IRL)
+                                    </td>
+                                    <td> Victoire
+                                        6/4 6/1
+                                    </td>
+                                    <td>Juillet 2018</td>
+                
+                                </tr>
+            </tbody>
         </table>
     </div>
     <div id="palmares2017" class="hidden palmaresContainer">
