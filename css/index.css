@@ -1,14 +1,14 @@
+/** Mobile First
+*/
 .bgImg1,
 .bgImg2,
 .bgImg3 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
-  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .bgImg1 {
   background-image: url('../Ressources/Loan Go.jpg');
@@ -27,8 +27,7 @@
 
 .historyContent,
 .projetContent {
-  text-align: center;
-  padding: 50px 80px;
+  padding: 50px 2rem;
   text-align: justify;
   font-family: 'Lato', sans-serif;
 }
@@ -43,26 +42,26 @@
   color: white;
 }
 
+.videoContent iframe {
+  max-width: 100%;
+  width: 100%;
+}
+
 .videoContent {
   background-color: transparent;
   text-align: center;
-  padding: 50px 80px;
+  padding: 50px 0;
 }
 
 .contentRight,
 .contentLeft {
   display: inline-block;
   vertical-align: middle;
+  
 }
 
-.contentLeft {
-  width: 25%;
-}
-
-.contentRight {
-  width: 75%;
-  padding-left: 50px;
-  box-sizing: border-box;
+.contentLeft img {
+  width: 100%;
 }
 
 .contentTitle {
@@ -73,15 +72,19 @@
 }
 
 .photoGallery {
-  margin: 80px;
+  margin: 80px 0;
   text-align: center;
+}
+
+.photoContainer img {
+  max-width: 100%;
 }
 
 .photoContainer {
   display: inline-block;
-  width: 30%;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  width: 44%;
+  margin-right: 3%;
+  margin-bottom: 3%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
@@ -90,8 +93,40 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Turn off parallax scrolling for tablets and phones */
+@media (min-width: 576px) {
+  .videoContent {
+    padding: 50px 80px;
+  }
 
+  .videoContent iframe {
+    width: 850px;
+  }
+
+  .contentLeft {
+    width: 25%;
+  }
+
+  .contentRight {
+    /* width: 75%; */
+    padding: 50px 80px;
+    /* box-sizing: border-box; */
+  }
+
+  .photoGallery {
+    margin: 80px;
+  }
+
+  .photoContainer {
+    width: 30%;
+  }
+
+  .historyContent,
+  .projetContent {
+    padding: 50px 80px;
+  }
+}
+
+/* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1,
   .bgimg-2,
