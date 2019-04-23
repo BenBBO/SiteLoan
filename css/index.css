@@ -32,6 +32,9 @@
   font-family: 'Lato', sans-serif;
 }
 
+.projetContent h3{
+  text-align:center;
+}
 .historyContent {
   color: #777;
   background-color: white;
